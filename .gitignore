@@ -1,0 +1,9 @@
+# Code::Blocks #
+################
+*.layout
+*.depend
+
+# Compiled Code #
+#################
+bin/
+obj/

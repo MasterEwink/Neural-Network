@@ -21,12 +21,12 @@ int calculeErreur(Reseau reseau)
     return erreur;
 }
 
-float calculeG_ijk(Reseau reseau, unsigned int i, unsigned int j, unsigned int k)
+float calculeG_ijk(Reseau& reseau, unsigned int i, unsigned int j, unsigned int k)
 {
     return (reseau.getNeurone(i, j).getValeur())*(calculeDelta_ij(reseau, i+1,k));
 }
 
-float calculeDelta_ij(Reseau reseau, unsigned int i, unsigned int j)
+float calculeDelta_ij(Reseau& reseau, unsigned int i, unsigned int j)
 {
     unsigned int k(0);
     float somme(0.);

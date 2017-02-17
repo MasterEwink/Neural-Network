@@ -254,21 +254,6 @@ void Reseau::caluleNeurone(unsigned int i, unsigned int j)
     }
 }
 
-void Reseau::afficheNeurones()
-{
-    unsigned int i(0), j(0);
-    cout << "Neurones :" << endl;
-    for (i = 0 ; i < m_nbNeuroneCouche.size() ; i++)
-    {
-        for (j = 0 ; j < m_nbNeuroneCouche[i] ; j++)
-        {
-            cout << m_neurones[i][j].getActive() << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-}
-
 void Reseau::afficheLiaisons()
 {
     unsigned int i(0), j(0), k(0);
