@@ -81,21 +81,3 @@ void Neurone::setActive(bool active)
         m_valeur = -1.;
     }
 }
-
-void Neurone::init()
-{
-    m_active = 0;
-    m_seuil = 0;
-    m_valeur = 0;
-    m_actuel = 0;
-}
-
-Neurone Neurone::copie()
-{
-    Neurone copie;
-    copie.m_active = m_active;
-    copie.m_actuel = m_actuel;
-    copie.m_seuil = m_seuil;
-    copie.m_valeur = m_valeur;
-    return copie;
-}

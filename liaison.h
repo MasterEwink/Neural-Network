@@ -15,19 +15,19 @@ class Liaison
 {
     public :
 
-    Liaison();
-    Liaison(float poids);
-    Liaison(Liaison const& liaison);
+        Liaison();
+        Liaison(float poids);
+        Liaison(Liaison const& other);
 
-    float getPoids();
-    float getGradientPrec();
+        float getPoids();
+        float getGradientPrec();
 
-    void changerPoids(float nouveau);
+        void changerPoids(float nouveau);
 
     private :
 
-    float m_poids;
-    float m_gradientPrec;
+        float m_poids;
+        float m_gradientPrec;
 };
 
 #endif // DEF_LIAISON

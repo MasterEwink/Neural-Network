@@ -19,9 +19,9 @@ Liaison::Liaison(float poids)
     m_poids = poids;
 }
 
-Liaison::Liaison(Liaison const& liaison)
+Liaison::Liaison(Liaison const& other)
 {
-    m_poids = liaison.m_poids;
+    m_poids = other.m_poids;
 }
 
 float Liaison::getPoids()
