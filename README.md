@@ -2,7 +2,9 @@
 
 Un réseau de neurones artificiel, codé en C++, orienté objet.
 
-Le but ici est de créer une structure de réseau, telle que décrite dans le fichier "autres/schema-explicatif.png".
+Le réseau est fonctionnel, et l'apprentissage fonctionne a priori.
+Un système de sauvegarde des données et du réseau a été mis en place.
+Rien à voir avec le code mais des scripts python faits à l'arrache permettent de visualiser les résultats produits par le réseau.
 
-La structure de réseau est fonctionelle.
-Le but est maintenant de coder l'apprentissage. Pour cela, je me base sur une thèse de M.Burrel.
+Pour l'instant je fais tourner des tests avec différents paramètres pour voir les résultats (pas top).
+À voir s'il ne faut pas implémenter un facteur d'oubli, dont la valeur dépend de l'intercouche de liaisons qu'on modifie.
