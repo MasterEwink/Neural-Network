@@ -33,6 +33,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="apprentissage.cpp" />
+		<Unit filename="apprentissage.h" />
 		<Unit filename="liaison.cpp" />
 		<Unit filename="liaison.h" />
 		<Unit filename="main.cpp" />
@@ -40,9 +42,13 @@
 		<Unit filename="neurone.h" />
 		<Unit filename="reseau.cpp" />
 		<Unit filename="reseau.h" />
+		<Unit filename="saveload.cpp" />
+		<Unit filename="saveload.h" />
 		<Extensions>
 			<code_completion />
+			<envvars />
 			<debugger />
+			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
