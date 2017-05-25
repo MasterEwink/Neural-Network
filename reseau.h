@@ -1,8 +1,8 @@
 /*
     Neural Network
     reseau.h
-        Créé : 09/09/16
-        Délaration de la classe réseau
+        CrÃ©Ã© : 09/09/16
+        DÃ©laration de la classe rÃ©seau
 */
 
 #ifndef DEF_RESEAU
@@ -21,24 +21,29 @@ class Reseau
 {
     public :
 
-        //Reseau(); //1
         Reseau(std::vector<unsigned int> nbNeuroneCouche);
         ~Reseau();
 
         Neurone getEntree(unsigned int i);
         Neurone getSortie(unsigned int i);
+        Neurone getNeurone(unsigned int i, unsigned int j);
         Liaison getLiaison(unsigned int i, unsigned int j, unsigned int k);
         unsigned int getNbEntrees();
         unsigned int getNbSorties();
         unsigned int getNbCouches();
         unsigned int getNbNeuronesCouches(unsigned int i);
-        void setEntrees(std::vector<bool> entrees);     // Retourne 1 si les entrees ont été initialisées
+        void setEntrees(std::vector<bool> entrees);     // Retourne 1 si les entrees ont Ã©tÃ© initialisÃ©es
         void setEntreesActuelles(bool actuelles);
+        void setLiaisonPoids(unsigned int i, unsigned int j, unsigned int k, float poids);
+        void setNeuroneDelta(unsigned int i, unsigned int j, float delta);
+        void setNeuroneDeltaActuel(unsigned int i, unsigned int j, bool deltaActuel);
 
         std::vector<bool> calculeSorties();
-        void caluleNeurone(unsigned int i, unsigned int j);
+        void caculeNeurone(unsigned int i, unsigned int j);
 
         void afficheNeurones();
+        void afficheES();
+        void afficheSorties();
         void afficheLiaisons();
 
     private :
