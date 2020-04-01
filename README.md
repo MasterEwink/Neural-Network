@@ -1,11 +1,12 @@
 # Neural-Network
 
-Projet étudiant réalisé dans le cadre d'un TIPE de Classes Préparatoires aux Grandes Écoles.
-Le développement est arrêté.
+Student project created during "TIPE" for "Classes Préparatoires aux Grandes Écoles". The development stopped.
 
-Un réseau de neurones artificiel, codé en C++, orienté objet.
+## Goal
 
-Le but ici est de créer une structure de réseau, telle que décrite dans le fichier "autres/schema-explicatif.png".
+Creating a neural network in C++ from nothing, and applying it to image compression.
 
-La structure de réseau est fonctionelle.
-Le but est maintenant de coder l'apprentissage. Pour cela, je me base sur une thèse de M.Burrel.
+## Work achieved
+
+The program is able to create a neural network, compute its output from an input, and apply backpropagation to train it for a desired output.
+The idea was to create a kind of funnel shaped neural network which could recreate each part of a decomposed image, then cut the neural network in the middle, and use it as a compression / decompression device for this specific image. Thus, both half of the network and its input must be lighter than the original full image in order to be efficient.
